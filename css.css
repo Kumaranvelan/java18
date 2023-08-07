@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+   
+   }
+   .body{
+       background-color: rgb(149, 150, 177);
+    
+   }
+   input{
+       display: inline-block;
+    border-radius: 10px;
+      
+   }
+   
+   .field{
+    margin: 0px 0px 0px 580px;
+   
+   }
+   th {
+       text-align: left;
+       padding: 20px;
+   }
+.next{
+    margin: 0px 0px 100px 0px;
+}

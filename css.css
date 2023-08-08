@@ -4,24 +4,29 @@
     font-weight: bold;
    
    }
-   .body{
-       background-color: rgb(149, 150, 177);
+   .merc{
+    background-color: rgb(149, 150, 177);
+   }
+   body{
+    
+       padding: 10px;
     
    }
    input{
        display: inline-block;
-    border-radius: 10px;
+    border-radius: 5px;
       
    }
-   
-   .field{
-    margin: 0px 0px 0px 580px;
-   
+   .next{
+    background-color: antiquewhite;
    }
+   
    th {
        text-align: left;
-       padding: 20px;
+       padding: 10px;
    }
-.next{
-    margin: 0px 0px 100px 0px;
+.new{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
 }

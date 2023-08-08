@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body class="body">
-    <h1 style="text-align: center;">NEW BUSINESS</h1><br>
-    <div>
-        <form id="myForm" class="field" target="_blank">
+<body>
+    <h1>NEW BUSINESS</h1><br>
+    <div class="merc">
+        <form id="myForm"  target="_blank" onclick="myfunction()">
             <table>
 
                 <tr>
                     <td><label for="name">NAME</label></td>
-                    <td><input type="text" class="fame" name="name" maxlength="10" value=""></td>
+                    <td><input type="text" id="fame" name="name" maxlength="10" value=""></td>
                 </tr>
 
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input type="text" class="mail" name="email" string="10" value=""></td>
+                    <td><input type="text" id="mail" name="email" string="10" value=""></td>
                 </tr>
 
                 <tr>
@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                     <td><label for="contactphone">Contact Phone</label></td>
-                    <td><input type="tel" id="quantity" name="contactphone" minlength="1" maxlength="10" value=""></td>
+                    <td><input type="tel" id="conquan" name="contactphone" minlength="1" maxlength="10" value=""></td>
                 </tr>
                 <tr>
                     <td><label for="contact email">Contact email</label></td>
@@ -47,14 +47,14 @@
 
                 <tr>
                     <td><label for="notes">Notes</label></td>
-                    <td><textarea name="notes" id="notes" cols="20" rows="1" style="border-radius: 20px;"
+                    <td><textarea name="notes" id="notes" cols="21" rows="1" style="border-radius: 20px;"
                             value=""></textarea></td>
 
                 </tr>
 
                 <tr>
                     <td><label for="Type">Type</label><br><br></td>
-                    <td><input type="radio" name="possible values" id="possible values" value="small buisiness">
+                    <td><input type="radio" name="possible values" id="possiblevalues" value="small buisiness">
                         <label for="possible values">small buisiness</label><br><br>
                         <input type="radio" name="possiblr values" id="possible values" value="enterprise">
                         <label for="possible values">Enterprise</label><br><br>
@@ -65,7 +65,8 @@
 
                 <tr>
                     <td><label for="category">category:</label></td>
-                    <td><select id="category" name="category" size="5" multiple value="">
+                    <td><select id="c
+                        ategory" name="category" size="5" multiple value="">
                             <option value="clothes">clothes</option>
                             <option value="toys">toys</option>
                             <option value="elect">electronics</option>
@@ -91,11 +92,10 @@
                 </tr>
                 <tr>
                     <td><label for="critical">Critical account</label></td>
-                    <td><input type="checkbox" id="checkbox" name="criticalaccount" value="">
+                    <td><input type="checkbox" id="checkbox" name="criticalaccount" value="yes"></td>
                         <td><label for="yes">yes</label></td>
-                    <td><input type="checkbox" id="checkbox" name="critic" value=""></td>
-                    <td>
-                        <label for="no">No</label></td>
+                    <td><input type="checkbox" id="checkbox" name="critic" value="no"></td>
+                    <td><label for="no">No</label></td>
                 </tr>
 
                 <tr>
@@ -109,16 +109,39 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <button>Submit</button></td>
+                    <td> <button type="button" onsubmit="myfunction()">Submit</button></td>
                 </tr>
         </form>
     </div>
-    <div>
-        <table>
-            <tr>
 
-              
+    <div class="next">
+        <table id="data-table">
+            <thead>
+            <tr  class="new">
+               <th>Name</th>
+               <th>Email</th>
+                <th>PhoneNumber</th>
+                <th>Website</th>
+                <th>Contact Name</th>
+                <th>ContactPhone</th>
+                <th>Contact Email</th>
+                <th>Notes</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Commission Percentage</th>
+                <th>ActiveForm</th>
+                <th>LOGO</th>
+                <th>Critical Account</th>
+                <th>Payment Option</th>
+                <th> <button>Edit</button>
+                      <button>Save</button>
+                    <button>Delete</button>
+                 </th>
             </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
         </table>
     </div>
 
